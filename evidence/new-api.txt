@@ -1,0 +1,1 @@
+Profiles API v2. GET /users/{id} requires id and returns id,name,email plus optional locale. POST /users requires name and email.

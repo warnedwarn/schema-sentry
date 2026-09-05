@@ -1,0 +1,1 @@
+Optional response fields are compatible. Removing paths, required inputs, or documented response fields requires migration.
