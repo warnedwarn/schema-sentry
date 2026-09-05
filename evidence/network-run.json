@@ -1,0 +1,31 @@
+{
+  "id": "SS-1788576883",
+  "transactions": {
+    "register": "0x43cac6c1800314ebb70ca688fb7697bedeae62c38027e800d5574212f3a2be3e",
+    "review": "0xe76ff6bedc38bae9c8616ec1538b5bb3d5282f2d3289bc8afc3216815856f5ae",
+    "acknowledge": "0x2c012a102581e0524519a03cf25d26417be0785279bfabbc549c7d2de8f2fd8c"
+  },
+  "state": {
+    "breakingPaths": [],
+    "coveredPaths": [
+      "/users",
+      "/users/{id}"
+    ],
+    "digests": [
+      "1b958a655d124e928e8f5e90e118dc46e355a5e224587da2bff2e332acd3ade7",
+      "600a5947f0b0ae143afdafb2ef68f792c1357f089820edacaa120f0f0d0fdc49",
+      "370f3f33dccd19971b6dc354050a2c7675fd0070100b278c836c04f928ac35c0"
+    ],
+    "id": "SS-1788576883",
+    "owner": "0x013A0745a3b2DbF87f4AB377266fCcb7e6eEC88A",
+    "revision": "v2",
+    "service": "Profiles API",
+    "sources": [
+      "https://raw.githubusercontent.com/warnedwarn/schema-sentry/f5d93bb4302966f0004c56d507dc770bf93106f3/evidence/old-api.txt",
+      "https://cdn.jsdelivr.net/gh/warnedwarn/schema-sentry@f5d93bb4302966f0004c56d507dc770bf93106f3/evidence/new-api.txt",
+      "https://github.com/warnedwarn/schema-sentry/raw/f5d93bb4302966f0004c56d507dc770bf93106f3/evidence/migration-policy.txt"
+    ],
+    "state": "ACKNOWLEDGED",
+    "verdict": "COMPATIBLE"
+  }
+}
