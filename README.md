@@ -15,6 +15,13 @@ PENDING_ATTESTATIONS -> READY -> APPROVED -> RELEASED
 
 Validators agree on the exact compatibility verdict, breaking paths and covered paths from the frozen snapshots. Only `COMPATIBLE` creates `APPROVED`. Only the nominated release controller can call `execute_release`, and the call succeeds only from `APPROVED`; every other verdict gates the release in `BLOCKED`.
 
+## Verified deployment
+
+- StudioNet contract: `0xF3012A863250ebD5d5163d187d7cF75bF7A00D49`
+- Reviewed source commit: `dbe721aa80674612693a479f6173f1e17f270640`
+- The recorded network lifecycle freezes three artifacts, collects exact-digest attestations from three distinct wallets, and finishes in `RELEASED` under the assigned controller.
+- Reproduce it with `python review_tools/smoke.py`; transaction hashes are stored under `evidence/`.
+
 ## Verification
 
 ```bash

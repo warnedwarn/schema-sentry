@@ -1,31 +1,52 @@
 {
-  "id": "SS-1788576883",
+  "id": "SS-1788740378",
+  "contract": "0xF3012A863250ebD5d5163d187d7cF75bF7A00D49",
+  "sourceCommit": "dbe721aa80674612693a479f6173f1e17f270640",
   "transactions": {
-    "register": "0x43cac6c1800314ebb70ca688fb7697bedeae62c38027e800d5574212f3a2be3e",
-    "review": "0xe76ff6bedc38bae9c8616ec1538b5bb3d5282f2d3289bc8afc3216815856f5ae",
-    "acknowledge": "0x2c012a102581e0524519a03cf25d26417be0785279bfabbc549c7d2de8f2fd8c"
+    "register": "0xde0fec81e08118f12138e93c0b1ca860212c9f458da5f3d753823466beb3f269",
+    "attest0": "0x4c791f709efb183bc7f3584765e127d65875085e78f865b61d669e2f0bd7a435",
+    "attest1": "0x0cc74dd4e2dd83deb28f30b73fb2e5604d7316fe78fe665694cab2be973856a6",
+    "attest2": "0xb24f31881ec6f61388b5f3f67b06dfac7971935d8643be2ab7d048919877e547",
+    "review": "0xe251fa8703133764505ff38a2d0eea6b0d0172fa1472cdec362b6d58243eedc9",
+    "executeRelease": "0x5c532f728e1366fa80edcc0ee0093f4d181e13b4606a1dea7091ca2168f8302f"
   },
   "state": {
+    "attested": [
+      true,
+      true,
+      true
+    ],
     "breakingPaths": [],
     "coveredPaths": [
-      "/users",
-      "/users/{id}"
+      "GET /users/{id}",
+      "POST /users"
     ],
     "digests": [
       "1b958a655d124e928e8f5e90e118dc46e355a5e224587da2bff2e332acd3ade7",
       "600a5947f0b0ae143afdafb2ef68f792c1357f089820edacaa120f0f0d0fdc49",
       "370f3f33dccd19971b6dc354050a2c7675fd0070100b278c836c04f928ac35c0"
     ],
-    "id": "SS-1788576883",
+    "id": "SS-1788740378",
     "owner": "0x013A0745a3b2DbF87f4AB377266fCcb7e6eEC88A",
+    "releaseController": "0x05C0cc3F433F6e296f18117f558FdB9043434793",
     "revision": "v2",
     "service": "Profiles API",
-    "sources": [
-      "https://raw.githubusercontent.com/warnedwarn/schema-sentry/f5d93bb4302966f0004c56d507dc770bf93106f3/evidence/old-api.txt",
-      "https://cdn.jsdelivr.net/gh/warnedwarn/schema-sentry@f5d93bb4302966f0004c56d507dc770bf93106f3/evidence/new-api.txt",
-      "https://github.com/warnedwarn/schema-sentry/raw/f5d93bb4302966f0004c56d507dc770bf93106f3/evidence/migration-policy.txt"
+    "snapshots": [
+      "Profiles API v1. GET /users/{id} requires id and returns id,name,email. POST /users requires name and email.\n",
+      "Profiles API v2. GET /users/{id} requires id and returns id,name,email plus optional locale. POST /users requires name and email.\n",
+      "Optional response fields are compatible. Removing paths, required inputs, or documented response fields requires migration.\n"
     ],
-    "state": "ACKNOWLEDGED",
+    "sourceAuthorities": [
+      "0xCAFA30BF94D4fb01146588a1b7901BD85E7DbD0f",
+      "0xAD049E0Edc298C97552eD60071a35bfc60181FD4",
+      "0x05C0cc3F433F6e296f18117f558FdB9043434793"
+    ],
+    "sources": [
+      "https://raw.githubusercontent.com/warnedwarn/schema-sentry/dbe721aa80674612693a479f6173f1e17f270640/evidence/old-api.txt",
+      "https://cdn.jsdelivr.net/gh/warnedwarn/schema-sentry@dbe721aa80674612693a479f6173f1e17f270640/evidence/new-api.txt",
+      "https://github.com/warnedwarn/schema-sentry/raw/dbe721aa80674612693a479f6173f1e17f270640/evidence/migration-policy.txt"
+    ],
+    "state": "RELEASED",
     "verdict": "COMPATIBLE"
   }
 }
