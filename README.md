@@ -22,6 +22,10 @@ Validators agree on the exact compatibility verdict, breaking paths and covered 
 - The recorded network lifecycle freezes three artifacts, collects exact-digest attestations from three distinct wallets, and finishes in `RELEASED` under the assigned controller.
 - Reproduce it with `python review_tools/smoke.py`; transaction hashes are stored under `evidence/`.
 
+## Public application workflow
+
+The browser uses the deployed contract's complete revised interface. Registration submits the review ID, service, revision, three editable evidence URLs, three authority addresses, and the release controller. Each authority can then select its immutable slot and call `attest_source` with the frozen digest. The owner runs `review`, and the configured controller calls `execute_release` only after a `COMPATIBLE` result. Every write keeps `SUBMITTED`, `ACCEPTED`, and `FINALIZED` distinct and reports success only after `MAJORITY_AGREE`.
+
 ## Verification
 
 ```bash
