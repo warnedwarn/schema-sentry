@@ -26,6 +26,8 @@ Validators agree on the exact compatibility verdict, breaking paths and covered 
 
 The browser uses the deployed contract's complete revised interface. Registration submits the review ID, service, revision, three editable evidence URLs, three authority addresses, and the release controller. Each authority can then select its immutable slot and call `attest_source` with the frozen digest. The owner runs `review`, and the configured controller calls `execute_release` only after a `COMPATIBLE` result. Every write keeps `SUBMITTED`, `ACCEPTED`, and `FINALIZED` distinct and reports success only after `MAJORITY_AGREE`.
 
+Live application: https://schema-sentry.pages.dev/
+
 ## Verification
 
 ```bash

@@ -7,5 +7,8 @@
   "evidenceCommit": "dbe721aa80674612693a479f6173f1e17f270640",
   "receiptStatus": "FINALIZED",
   "consensus": "MAJORITY_AGREE",
-  "execution": "SUCCESS"
+  "execution": "SUCCESS",
+  "publicSite": "https://schema-sentry.pages.dev/",
+  "frontendCommit": "abb17d6",
+  "browserProofReview": "SS-1788740378"
 }
